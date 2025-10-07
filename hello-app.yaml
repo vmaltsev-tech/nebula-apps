@@ -32,13 +32,6 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "200m"
-        securityContext:
-          runAsNonRoot: true
-          runAsUser: 101
-          allowPrivilegeEscalation: false
-          capabilities:
-            drop: ["ALL"]
-          readOnlyRootFilesystem: false
 ---
 apiVersion: v1
 kind: Service
